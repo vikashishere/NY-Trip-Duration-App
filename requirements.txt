@@ -5,3 +5,5 @@ uvicorn
 scikit-learn
 pandas
 xgboost
+mlflow
+hyperopt
