@@ -1,0 +1,22 @@
+1. Create git repo and clone it in local. 
+   Add requirements.txt and setup.py
+2. Create a venv:
+    > conda create -n test python=3.10 -y
+    > conda activate test
+    > pip install -r requirements.txt
+3. Create a project structure using:
+    > cookiecutter -c v1 https://github.com/drivendata/cookiecutter-data-science
+    > s3: s3://complaints-datagrid
+4. Move the train and test data inside data.raw directory
+5. Do "dvc init", "dvc add data/" and "git add .gitignore data.dvc", "dvc install"
+    >> Now do "mkdir S3" (creates a new S3 directory)
+    >> Now we do "dvc remote add -d myremote S3" (add "/S3" to .gitignore)
+6. Then "dvc add models/" and "git add models.dvc .gitignore"
+7. Git add-commit-push
+8. Add code to:
+    >> src.features.build_features.py
+    >> src.features.features_definitions.py
+    >> src.models.train_model.py
+    >> dvc.yaml
+9. Run entire pipeline using "dvc repro" then "git add dvc.lock"
+10. Now create service.py file and add code.
