@@ -20,3 +20,22 @@
     >> dvc.yaml
 9. Run entire pipeline using "dvc repro" then "git add dvc.lock"
 10. Now create service.py file and add code.
+11. Finally, add code to src.models.push_model.py
+12. Do "mlflow server" to check experimentation stats and artifacts.
+
+## Steps to implement CICD
+
+* Setup your dockerfile
+* separate your dev-requirements.txt and requirements.txt 
+* work on .GitHub/workflows/ci.yml
+* create an ubuntu instance on aws
+* create a self hosted runner by following the script from GitHub Actions
+* create ecr repo
+
+
+GitHub Secrets - 
+> AWS_ACCESS_KEY_ID
+> AWS_SECRET_ACCESS_KEY
+> AWS_ECR_LOGIN_URI
+> AWS_REGION
+> ECR_REPOSITORY_NAME
