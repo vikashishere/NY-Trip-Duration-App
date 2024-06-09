@@ -9,8 +9,8 @@ stages:
     deps:
     - .\data\processed\
     - .\src\models\train_model.py
-  # push_model:
-  #   cmd: python .\src\models\push_model.py .\data\processed\
-  #   deps:
-  #   - .\models\
-  #   - .\src\models\train_model.py
+  push_model:
+    cmd: python .\src\models\push_model.py .\data\processed\
+    deps:
+    - .\models\
+    - .\src\models\train_model.py

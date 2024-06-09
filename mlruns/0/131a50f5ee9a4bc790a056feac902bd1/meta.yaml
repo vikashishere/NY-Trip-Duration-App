@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Personal/Desktop/DSMP2023-2024/replica-trip-duration/NY-Trip-Duration-App-main/mlruns/0/131a50f5ee9a4bc790a056feac902bd1/artifacts
+end_time: 1717906925610
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 131a50f5ee9a4bc790a056feac902bd1
+run_name: XGBRegressor
+run_uuid: 131a50f5ee9a4bc790a056feac902bd1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717906902666
+status: 3
+tags: []
+user_id: Personal
